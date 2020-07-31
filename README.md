@@ -37,16 +37,16 @@ Steering = - E <br>
 
 The proportional component depends only on the error at the present. It is calculated simply by multiplying the error term with a proportional gain (Kp). P-component is often the driving force of the controller in minimizing errors. It changes the controller output proportionally to the error. In other words, the larger the error, the stronger control action P-Component will yield to correct such error. However, if the proportional gain is set too high, the controller loop will begin oscillating due to overshooting, making the system unstable.
 
+#### I - Integral Component
+
+The integral component is propotional to the sums of the error term over time. As a result, the integral component will increase slowly over time even when the system has very small error term. The i-component ensures that certain control action will be exerted continually unless the error is zero. It can be very effective in driving the Steady-State error to zero (Steady-State error is the difference between the stable process variable and set point, due to system bias).
+
 #### D - Derivative Component
 
 The derivative component depends on the rate of change of the error. In other words, while p-component is based on the error at the present, d-component is based on its future trend. With d-component, the system will produce more control action when the error changes at a faster rate. As a result, adding d-component to a p-only controller can help reduce oscillation and make the system more stable (settling at a certain point).
 
 ![alt text][image_3]  ![alt text][image_4] <br>
 <i>Adding D-Component helps reduce overshooting (left: without D, right: with D)</i>
-
-#### I - Integral Component
-
-The integral component is propotional to the sums of the error term over time. As a result, the integral component will increase slowly over time even when the system has very small error term. The i-component ensures that certain control action will be exerted continually unless the error is zero. It can be very effective in driving the Steady-State error to zero (Steady-State error is the difference between the stable process variable and set point, due to system bias).
 
 ## Twiddle - Fine-Tuning PID Parameters
 
