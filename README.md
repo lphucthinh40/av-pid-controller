@@ -29,10 +29,9 @@ In this project, we are using PID Controller to control the steering angle of th
 E = Kp · e + Kd · de ∕ dt + Ki · ∫e(t)dt<br>
 Steering = - E <br>
 </p>
-<p align="center">
+
 ![alt text][image_0] <br>
 <i>PID Control Feedback Loop (source: wikipedia)</i>
-</p>
 
 #### P - Proporsional Component
 
