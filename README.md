@@ -33,7 +33,7 @@ Steering = - E <br>
 ![alt text][image_0] <br>
 <i>PID Control Feedback Loop (source: wikipedia)</i>
 
-#### P - Proporsional Component
+#### P - Proportional Component
 
 The proportional component depends only on the error at the present. It is calculated simply by multiplying the error term with a proportional gain (Kp). P-component is often the driving force of the controller in minimizing errors. It changes the controller output proportionally to the error. In other words, the larger the error, the stronger control action P-Component will yield to correct such error. However, if the proportional gain is set too high, the controller loop will begin oscillating due to overshooting, making the system unstable.
 
